@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Endroid</string>
+
+
+    <string name="android_studio">Aandroid Studio</string>
+    <string name="examples">Examples</string>
+    <string name="guide">Guide</string>
+    <string name="architecture">Architecture</string>
+    <string name="share">Share</string>
+    <string name="xml">XML</string>
+    <string name="kotlin">Kotlin</string>
+    <string name="video">Video</string>
+    <string name="tutorials">Tutorials</string>
+    <string name="share_app">share app</string>
+    <string name="example">example</string>
+
+
+</resources>

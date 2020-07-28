@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@id/firstBottomNavFragment"
+        android:icon="@drawable/ic_xml_file"
+        android:title="@string/xml" />
+    <item
+        android:id="@id/secondBottomNavFragment"
+        android:icon="@drawable/ic_code"
+        android:title="@string/kotlin" />
+    <item
+        android:id="@id/thirdBottomNavFragment"
+        android:icon="@drawable/ic_play_circle"
+        android:title="@string/video" />
+
+</menu>

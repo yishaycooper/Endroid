@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.yishay.endroid.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_mainFragment_to_examplesFragment"
+            app:destination="@id/examplesFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_tutorialsFragment"
+            app:destination="@id/tutorialsFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_guideFragment"
+            app:destination="@id/guideFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_studioFragment"
+            app:destination="@id/studioFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_architectureFragment"
+            app:destination="@id/architectureFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/examplesFragment"
+        android:name="com.yishay.endroid.ExamplesFragment"
+        android:label="fragment_examples"
+        tools:layout="@layout/fragment_examples">
+        <action
+            android:id="@+id/action_examplesFragment_to_bottomTabActivity"
+            app:destination="@id/bottomTabActivity" />
+    </fragment>
+
+    <activity
+        android:id="@+id/bottomTabActivity"
+        android:name="com.yishay.endroid.BottomTabActivity"
+        android:label="activity_bottom_tab"
+        tools:layout="@layout/activity_bottom_tab">
+        <argument
+            android:name="message"
+            app:argType="integer" />
+    </activity>
+
+    <fragment
+        android:id="@+id/tutorialsFragment"
+        android:name="com.yishay.endroid.TutorialsFragment"
+        android:label="TutorialsFragment">
+        <action
+            android:id="@+id/action_tutorialsFragment_to_orientedFragment"
+            app:destination="@id/orientedFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/orientedFragment"
+        android:name="com.yishay.endroid.OrientedFragment"
+        android:label="fragment_oriented"
+        tools:layout="@layout/fragment_oriented">
+        <argument
+            android:name="message"
+            app:argType="integer" />
+        <argument
+            android:name="typeMessage"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/guideFragment"
+        android:name="com.yishay.endroid.GuideFragment"
+        android:label="GuideFragment">
+        <action
+            android:id="@+id/action_guideFragment_to_orientedFragment"
+            app:destination="@id/orientedFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/studioFragment"
+        android:name="com.yishay.endroid.StudioFragment"
+        android:label="fragment_studio">
+        <action
+            android:id="@+id/action_studioFragment_to_orientedFragment"
+            app:destination="@id/orientedFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/architectureFragment"
+        android:name="com.yishay.endroid.ArchitectureFragment"
+        android:label="ArchitectureFragment" >
+        <action
+            android:id="@+id/action_architectureFragment_to_orientedFragment"
+            app:destination="@id/orientedFragment" />
+    </fragment>
+
+</navigation>
